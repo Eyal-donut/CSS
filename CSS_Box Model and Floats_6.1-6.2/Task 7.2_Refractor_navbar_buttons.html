@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 7.2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+      }
+      .headings {
+        color: #4a5565;
+        padding: 10px 10px;
+      }
+
+      main {
+        background-color: white;
+        padding: 10px 10px;
+        color: #4a5565;
+      }
+
+      #prim-header {
+        background-color: #e8e8e8;
+        padding: 10px 10px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        /* background: green; */
+        height: 600px;
+        color: #4a5565;
+      }
+
+      #body {
+        background-color: #4a5565;
+        color: #e8e8e8;
+        padding: 10px;
+      }
+
+      #card-1 {
+        float: left;
+        width: 50%;
+        margin-right: 5px;
+        /* background: green; */
+      }
+
+      #card-2 {
+        float: right;
+        width: calc(50% - 5px);
+        /* background: red */
+      }
+
+      #footer {
+        background-color: #e8e8e8;
+        padding: 10px;
+        color: #4a5565;
+      }
+
+      .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #4a5565;
+        overflow: auto;
+        position: fixed;
+      }
+
+      /* .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      } */
+
+      .navbar li {
+        display: inline;
+        float: left;
+      }
+
+      .navbar li a {
+        display: block;
+        color: #e8e8e8;
+        text-decoration: none;
+        padding: 15px 30px;
+      }
+
+      .navbar li a:hover {
+        background-color: #404a58;
+        color: #e8e8e8;
+      }
+
+      .buttons {
+        background: #4c6ca0;
+        color: #e8e8e8;
+        border: none;
+        font-size: 14px;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+
+      .buttons:hover {
+        background-color: #404a58;
+        color: #e8e8e8;
+      }
+
+      .light-color-links {
+        color: #e8e8e8;
+      }
+      .dark-color-links {
+        color: #4c6ca0;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/df164e7096.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <br /><br />
+
+    <div id="prim-header" class="headings">
+      <br />
+      <header>
+        <h1>Hi there my name is Eyal Lila</h1>
+      </header>
+      <br />
+    </div>
+    <main>
+      <h2 id="secondary-header" class="headings">
+        I am a web developer
+        <i class="fa-solid fa-computer"></i>
+      </h2>
+      <br />
+      <img src="./images/My portrait.png" alt="My photo" width="200 px" />
+      <br />
+      <h3 id="Tertriary-header" class="headings">
+        I like writing code, breathing code and eating code for breakfast
+      </h3>
+      <br />
+      <button class="buttons">Random button</button>
+      <br />
+      <br />
+      <div class="body text">
+        <p>
+          Here is my personal
+          <a
+            class="dark-color-links"
+            href="https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024__340.jpg"
+            target="_blank"
+            >website</a
+          >
+        </p>
+        <br />
+      </div>
+    </main>
+
+    <div class="container">
+      <p>My hobbies are rock climbing and snowboarding</p>
+      <br />
+      <div id="card-1" class="card">
+        <img
+          src="./images/Eyal Rock climbing.jpeg"
+          alt="Me rock climbing"
+          width="400px"
+        />
+      </div>
+      <div id="card-2" class="card">
+        <img
+          src="./images/Eyal Snowboarding photo.png"
+          alt="Me snowboarding"
+          width="400px"
+        />
+      </div>
+    </div>
+
+    <div id="footer">
+      <h3 id="follow me" class="headings">Follow me</h3>
+
+      <a href="https://github.com/Eyal-donut" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <br />
+      <br />
+      <button class="buttons">
+        <a class="light-color-links" href="#" target="_blank">My portfolio</a>
+      </button>
+    </div>
+  </body>
+</html>
