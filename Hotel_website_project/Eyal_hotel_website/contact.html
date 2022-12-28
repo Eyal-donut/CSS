@@ -4,88 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Welcome to the most extraordinary hotel in Boston"
-    />
+    <meta name="description" content="Welcome to the most extraordinary hotel in Boston"/>
     <meta name="keywords" content="hotel, boston hotel, new england hotel" />
-    <link
-      rel="stylesheet"
-      href="/css/style.css"
-    />
-    <title>Hotel BT | Welcome</title>
-    <script
-      src="https://kit.fontawesome.com/df164e7096.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/df164e7096.js" crossorigin="anonymous"></script>
+    <title>Hotel BT | Contact</title>
   </head>
+
   <body>
     <header>
       <nav id="navbar">
         <div class="container">
           <h1 class="logo"><a href="index.html">HBT</a></h1>
           <ul>
-            <li><a class="current" href="index.html">HBT</a></li>
+            <li><a href="index.html">HBT</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="current" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
-
-      <div id="showcase">
-        <div class="container">
-          <div class="showcase-content">
-            <h1><span class="text-primary">Enjoy</span> Your Stay</h1>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis at impedit eius beatae unde ratione?
-            </p>
-            <a class="btn" href="about.html">About Our Hotel</a>
-          </div>
-        </div>
-      </div>
     </header>
 
-    <section id="home-info" class="bg-dark">
-      <div class="info-img"></div>
-      <div class="info-content">
-        <h2><span class="text-primary">The History</span> Of Our Hotel</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-          aliquam dolor alias iste autem, quaerat magni unde accusantium qui
-          fuga placeat quidem quo pariatur, voluptatum, ea sequi? Corporis,
-          explicabo quisquam dolor placeat praesentium nesciunt mollitia quos
-          nobis natus voluptatum asperiores!
-        </p>
-        <a href="about.html" class="btn btn-light">Read More</a>
+    <section id="contact-form" class="py-3">
+      <div class="container">
+        <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+        <p>Please fill out the form below to contact us</p>
+        <form action="process.php">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+
+        </form>
+      </div>
+    </section>
+    
+    <section id="contact-info" class="bg-dark">
+      <div class="container">
+        <div class="box">
+          <i class="fa-solid fa-hotel fa-3x"></i>
+          <h3>Location</h3>
+          <p>
+            50 Main st, Boston
+          </p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-phone fa-3x"></i>
+          <h3>Phone Number</h3>
+          <p>
+            052 4289947
+          </p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-envelope fa-3x"></i>
+          <h3>Email Adress</h3>
+          <p>
+          reception@hotelbt.com
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="features">
-      <div class="box bg-light">
-        <i class="fa-solid fa-hotel fa-3x"></i>
-        <h3>Great Location</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad?
-        </p>
-      </div>
-      <div class="box bg-primary">
-        <i class="fa-solid fa-utensils fa-3x"></i>
-        <h3>Free Meals</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad?
-        </p>
-      </div>
-      <div class="box bg-light">
-        <i class="fa-solid fa-dumbbell fa-3x"></i>
-        <h3>Fitness Room</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad?
-        </p>
-      </div>
-    </section>
-
-    <div class="clr"></div>
 
     <footer id="main-footer">
       <p>Hotel BT &copy; 2022 All Rights Reserved</p>
