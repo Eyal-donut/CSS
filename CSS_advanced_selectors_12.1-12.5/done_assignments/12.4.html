@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_12.1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 62.5%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .box {
+            background: #444;
+            position: relative;
+            width: 15rem;
+            height:10rem; 
+            margin: 4rem;
+        }
+
+        .box::after {
+            content: 'Cool Border';
+            position: absolute;
+            height: 60%;
+            width:60%;
+            top: 20%;
+            left:20%;
+            background:blue;
+            color: #f4f4f4;
+            z-index: 2;
+        }
+        .box::before {
+            content: '';
+            position:absolute;
+            height: 60%;
+            width:60%;
+            top: 20%;
+            left:20%;
+            background:rgb(135, 135, 22);
+            z-index: 1;
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>    
+</body>
+</html>
