@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 62.5%;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; 
+        cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+        display: none;
+        width: 100%;
+        background-color: #888;
+        color: #fff;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        bottom: 5px;
+        left: 105%;
+        
+        }
+
+        .tooltip:hover .tooltiptext {
+        display: inline;
+        
+        }
+    </style>
+
+
+</head>
+<body>
+    <br>
+    <br>
+    
+    <p>Lorem, <span class="tooltip">ipsum dolor sit amet<span class="tooltiptext">Tooltip text-1</span></span> consectetur adipisicing elit. Commodi, repellendus officiis beatae error distinctio dolorum vel sint ducimus expedita libero.</p>
+    
+    <div class="tooltip">Hover over me<span class="tooltiptext">Tooltip text</span>
+    </div>
+
+    <div class="tooltip">another one<span class="tooltiptext">blabblabl</span></div>
+       
+    
+</body>
+</html>
