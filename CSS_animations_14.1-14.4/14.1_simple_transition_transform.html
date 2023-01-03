@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14.1_transform</title>
+</head>
+<style>
+:root {
+    --prim-color:#999;
+}
+    html{
+    font-size:62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    
+}
+.box {
+    background: var(--prim-color);
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin-top:5rem;
+    margin-left: 30rem;
+    overflow: hidden;
+}
+.box::after {
+    content: '';
+    background: blue;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(-100%, 0%);
+    transition: all 1s ease-in-out;
+}
+
+.box:hover::after{
+    transform: translate(0%, 0%);
+}
+
+</style>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>
