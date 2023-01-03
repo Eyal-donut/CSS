@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14.3</title>
+    <style>
+        html,body {
+            margin:0;
+            padding:0;
+            height: 100hv;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:62.5%;
+            box-sizing: border-box;
+            text-align:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+            background: black;
+            
+        }
+
+        .spinner1 {
+            width: 10rem;
+            height:10rem;
+            margin:2rem;
+            border: 3px solid #f4f4f4;
+            border-top: 3px solid goldenrod;
+            border-radius:50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .spinner2 {
+            width: 10rem;
+            height:10rem;
+            margin:2rem;
+            border-top: 3px solid goldenrod;
+            border-radius:50%;
+            animation: spin 1s linear infinite;
+        }
+
+
+        @keyframes spin {
+            0% {transform: rotate(0deg);}
+            100% {transform:rotate(360deg);}
+        }
+
+        .spinner3 {
+            width:20rem;
+            height:4rem;
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .circle {
+            position: relative;
+            width: 2rem;
+            height:2rem;
+            margin:1rem;
+            background: goldenrod;
+            border-radius: 50%;
+            animation: load 1s linear infinite;
+            
+        }
+
+        #two.circle {
+            animation-delay: 0.33s;
+        }
+
+        #three.circle {
+            animation-delay: 0.66s;
+        }
+        
+        @keyframes load {
+            100% {background: #f4f4f4;}
+        }
+
+        .spinner4 {
+            width:20rem;
+            height:4rem;
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ball {
+            position: relative;
+            width: 2rem;
+            height:2rem;
+            margin:1rem;
+            background: goldenrod;
+            border-radius: 50%;
+            animation: scale .6s alternate-reverse infinite;
+        }
+        #two.ball {
+            animation-delay: 0.2s;
+        }
+
+        #three.ball {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes scale {
+            0% {transform: scale(1);}
+            100% {transform: scale(0);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="spinner1"></div>
+    <div class="spinner2"></div>
+    <div class="spinner3">
+        <div class="circle" id="one"></div>
+        <div class="circle" id="two"></div>
+        <div class="circle" id="three"></div>
+    </div>
+    <div class="spinner4">
+        <div class="ball" id="one"></div>
+        <div class="ball" id="two"></div>
+        <div class="ball" id="three"></div>
+    </div>
+
+</body>
+</html>
