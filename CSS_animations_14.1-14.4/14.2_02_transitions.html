@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14.2.02_transitions</title>
+    <style>
+        html {
+            font-size: 62%;
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+      
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #888;
+            position: relative;
+            width: 15rem;
+            height: 5rem;
+            border: 2px solid black;
+            overflow: hidden;
+            margin: 1rem;
+            transition: all 1s ease;
+          
+
+        }
+        
+
+        #translate-y::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: 'Cool!';
+            font-size: 2rem;
+            background: red;
+            transform: translateY(-100%);
+            width: 15rem;
+            height: 5rem;
+            position: absolute;
+            top:0px;
+            left:0px;
+            transition: all 1s ease;
+            z-index: 1;
+        }
+        #translate-y:hover::before{
+            transform: translateY(0%);
+        }
+
+        #translate-x::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: '';
+            font-size: 2rem;
+            background: blue;
+            transform: translateX(-100%);
+            width: 15rem;
+            height: 5rem;
+            position: absolute;
+            top:0px;
+            left:0px;
+            transition: all 1s ease;
+            z-index: 1;
+        }
+        #translate-x:hover::before{
+            transform: translateX(0%);
+        }
+
+        #rotate::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: '';
+            font-size: 2rem;
+            background: yellow;
+            width: 15rem;
+            height: 5rem;
+            position: absolute;
+            top:0;
+            right:0;
+            transform: rotate(90deg);
+            transform-origin: top left;
+            transition: all 1s ease;
+            z-index: 1;
+        }
+        #rotate:hover::before{
+            transform: rotate(0deg);
+            transform-origin: top left;
+        }
+
+        
+        #skew.btn{
+            transition: all 0.5s ease;
+        }
+        #skew.btn:hover{
+            transform: skewY(-7deg);
+        }
+
+        #skew::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: '';
+            background: pink;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%), skew(0,0);
+            transition: all 0.5s ease;
+        }
+        #skew:hover::before{
+            width: 15rem;
+            height: 5rem;
+            position:absolute;
+            transform: skew(180deg, 180deg);
+            top:0;
+            left:0;
+
+        }
+        #skew::after{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            content: 'Skewer';
+            position: absolute;
+            transition: all 1s ease;
+        }
+        #skew:hover::after {
+            transform: skewY(20deg);
+            z-index: 3;
+            transition: all 0.5s ease;
+        }
+
+        #scale::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: 'Scale';
+            font-size: 2rem;
+            width: 15rem;
+            height: 5rem;
+            visibility: none;
+            position: absolute;
+            transform: scale(10);
+            z-index: -1;
+            transition: all 0.5s ease;
+
+        }
+        #scale:hover::before {
+            transform: scale(1);
+            width: 15rem;
+            height: 5rem;
+            background: black;
+            color: white;
+            z-index:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn" id="translate-y">
+        Translate Y
+    </div>
+    
+    <div class="btn" id="translate-x">
+        <span>Translate X</span>
+    </div>
+    
+    <div class="btn" id="rotate">
+        <span>Rotate</span>
+    </div>
+
+    <div class="btn" id="skew">
+    </div> 
+    
+    <div class="btn" id="scale">
+        Scale
+    </div> 
+    
+</body>
+</html>
