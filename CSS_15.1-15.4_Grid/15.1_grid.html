@@ -11,9 +11,48 @@
         padding: 0;
         margin:0;
         box-sizing:border-box;
+        font-size: 62.5%;
     }
-    .container {
 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .container {
+        height: 30vh;
+        width: 100rem;
+        margin: 10rem;
+        display: grid;
+        grid-template-areas:
+        'header-left header-left header-right header-right'
+        'main-left main-right main-right main-right'
+        'footer footer footer footer';
+        grid-gap: 1rem;
+    }
+    .container > div {
+        border-radius: 0.5rem;
+    }
+    .header-left {
+        grid-area:header-left;
+        background: rgb(192, 46, 46);
+    }
+    .header-right {
+        grid-area:header-right;
+        background: rgb(56, 56, 199);
+    }
+    .main-left {
+        grid-area:main-left;
+        background:green;
+    }
+    .main-right {
+        grid-area:main-right;
+        background:purple;
+    }
+    .footer{
+        grid-area: footer;
+        background: rgb(204, 204, 56);
     }
 </style>
 <body>
