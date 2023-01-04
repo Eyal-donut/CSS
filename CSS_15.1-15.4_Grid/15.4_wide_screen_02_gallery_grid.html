@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_15.2_grid</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing:border-box;
+        font-size: 62.5%;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        height:100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+  
+    .container {
+        height: 50rem;
+        width:100%;
+        margin: 3rem;
+        display: grid;
+        grid-gap:1rem;  
+        grid-template-areas:
+        'one one two two two three four four'
+        'one one two two two three four four'
+        'five five two two two eight eight nine'
+        'five five six six seven eight eight nine'
+        'five five six six thirteen thirteen thirteen nine'
+        'ten eleven eleven twelve thirteen thirteen thirteen fourteen'
+        'ten eleven eleven twelve thirteen thirteen thirteen fourteen';
+    }
+   
+    .one {
+        grid-area:one;
+        background: url(/gg_starter_file-main/img/1.jpeg) no-repeat center center/cover;
+    }
+   
+    .two {
+        grid-area:two;
+        background:url(/gg_starter_file-main/img/2.jpeg) no-repeat center center/cover;
+    }
+    .three {
+        grid-area:three;
+        background: url(/gg_starter_file-main/img/3.jpeg) no-repeat center center/cover;
+    }
+    .four{
+        grid-area: four;
+        background: url(/gg_starter_file-main/img/4.jpeg) no-repeat center center/cover;
+    }
+    .five{
+        grid-area: five;
+        background: url(/gg_starter_file-main/img/5.jpeg) no-repeat center center/cover;
+    }
+    .six {
+        grid-area: six;
+        background: url(/gg_starter_file-main/img/6.jpeg) no-repeat center center/cover;
+    }
+    .seven {
+        grid-area: seven;
+        background: url(/gg_starter_file-main/img/7.jpeg) no-repeat center center/cover;
+    }
+    .eight {
+        grid-area: eight;
+        background: url(/gg_starter_file-main/img/8.jpeg) no-repeat center center/cover;
+    }
+    .nine {
+        grid-area: nine;
+        background: url(/gg_starter_file-main/img/9.jpeg) no-repeat center center/cover;
+    }
+    .ten {
+        grid-area: ten;
+        background: url(/gg_starter_file-main/img/10.jpeg) no-repeat center center/cover;
+    }
+    .eleven {
+        grid-area: eleven;
+        background: url(/gg_starter_file-main/img/11.jpeg) no-repeat center center/cover;
+    }
+    .twelve {
+        grid-area: twelve;
+        background: url(/gg_starter_file-main/img/12.jpeg) no-repeat center center/cover;
+    }
+    .thirteen {
+        grid-area: thirteen;
+        background: url(/gg_starter_file-main/img/13.jpeg) no-repeat center center/cover;
+    }
+    .fourteen {
+        grid-area: fourteen;
+        background: url(/gg_starter_file-main/img/14.jpeg) no-repeat center center/cover;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+        <div class="eleven"></div>
+        <div class="twelve"></div>
+        <div class="thirteen"></div>
+        <div class="fourteen"></div>
+    </div>
+</body>
+</html>
