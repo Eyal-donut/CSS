@@ -13,46 +13,56 @@
         box-sizing:border-box;
         font-size: 62.5%;
     }
+    body {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        height:100vh;
+    }
    
     .container {
-        height: 30vh;
-        min-width: 0;
+        height: 20rem;
+        width:30rem;
         margin: 10rem;
         display: grid;
         grid-template-areas:
         'header header header header'
         'main-left main-left main-right main-right'
-        'main-left main-left footer footer';
+        'main-left main-left footer1 footer2';
         grid-gap: 1rem;
     }
     .container > div {
         border-radius: 0.5rem;
     }
     .header {
-        grid-area:header-left;
+        grid-area:header;
         background: rgb(192, 46, 46);
     }
    
     .main-left {
         grid-area:main-left;
-        background:green;
+        background:rgb(62, 62, 189);
     }
     .main-right {
         grid-area:main-right;
-        background:purple;
+        background:rgb(72, 154, 72);
     }
-    .footer{
-        grid-area: footer;
-        background: rgb(204, 204, 56);
+    .footer1{
+        grid-area: footer1;
+        background: purple;
+    }
+    .footer2{
+        grid-area: footer2;
+        background: purple;
     }
 </style>
 <body>
     <div class="container">
-        <div class="header-left"></div>
-        <div class="header-right"></div>
+        <div class="header"></div>
         <div class="main-left"></div>
         <div class="main-right"></div>
-        <div class="footer"></div>
+        <div class="footer1"></div>
+        <div class="footer2"></div>
     </div>
     
 </body>
