@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task_15.1_grid</title>
+    <title>task_15.2_grid</title>
 </head>
 <style>
     *{
@@ -13,35 +13,26 @@
         box-sizing:border-box;
         font-size: 62.5%;
     }
-
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
    
     .container {
         height: 30vh;
-        width: 100rem;
+        min-width: 0;
         margin: 10rem;
         display: grid;
         grid-template-areas:
-        'header-left header-left header-right header-right'
-        'main-left main-right main-right main-right'
-        'footer footer footer footer';
+        'header header header header'
+        'main-left main-left main-right main-right'
+        'main-left main-left footer footer';
         grid-gap: 1rem;
     }
     .container > div {
         border-radius: 0.5rem;
     }
-    .header-left {
+    .header {
         grid-area:header-left;
         background: rgb(192, 46, 46);
     }
-    .header-right {
-        grid-area:header-right;
-        background: rgb(56, 56, 199);
-    }
+   
     .main-left {
         grid-area:main-left;
         background:green;
